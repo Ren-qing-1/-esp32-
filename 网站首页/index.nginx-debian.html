@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8">
+    <title>毕业设计首页</title>
+    <link rel="shortcut icon" href="https://www.cauc.edu.cn/zhv4/images/logo.png">
+    <!--导入外部层叠样式表文件-->
+    <link rel="stylesheet" href="./index.css">
+
+  </head>
+
+  <body>
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left"></div>
+    </header>
+    <div class="page-content">
+      <div class="container">
+        <div class="cover shadow-lg bg-white">
+
+          <!--标题-->
+          <div class="cover-bg p-3 p-lg-4 text-white">
+            <div class="row">
+              <div class="col-lg-4 col-md-5">
+                <!-- <div class="avatar hover-effect bg-white shadow-sm p-1">
+                  <img src="" />
+                </div> -->
+              </div>
+              <div class="col-lg-8 col-md-7 text-center text-md-start">
+                <h2 data-aos="fade-left" data-aos-delay="0" class="h1 mt-2">宠物智能喂食器</h2>
+                <p data-aos="fade-left" data-aos-delay="100">指导老师：李强    学生：汤玉杰</p>
+              </div>
+            </div>
+          </div>
+
+          <!--项目介绍-->
+          <div class="about-section pt-4 px-3 px-lg-4 mt-1">
+            <div class="row">
+              <div>
+                <h2>项目介绍</h2>
+                <p>宠物自动喂食器是一种专门为狗狗设计的智能设备。它通过红外线感应技术来检测宠物的位置和动作状态（包括移动、坐下或站立等），从而判断是否需要给狗喂食物；同时还可以设置定时定量投喂时间表。当设定的时间到了以后会自动发出声音提醒主人进行喂养。目前市场上常见的喂食机主要有两种：一种是采用无线遥控器的喂食方式，另一种是使用红外线的喂食方式，本设计综合两者优点，将其方法融合在一起，设计出一款既可远程控制又能自动投喂的喂食器。</p>
+              </div>
+            </div>
+          </div>
+          <hr class="d-print-none" />
+
+          <!--项目构成-->
+          <div class="skills-section px-3 px-lg-4">
+            <h2>项目构成</h2>
+            <div>
+              <h5>1.编程语言</h5>
+              <p>网站首页&微信小程序: html css js</p>
+              <p>硬件程序: python</p>
+            </div>
+
+            <div>
+              <h5>2.工具&软件</h5>
+              <p>网站首页&硬件程序:
+                <a href="https://www.jetbrains.com/pycharm/">
+                  Pycharm
+                </a>
+              </p>
+              <p>微信小程序:
+                <a href="https://mp.weixin.qq.com/cgi-bin/wx">
+                  微信开发者工具
+                </a>
+              </p>
+              <p>服务器:
+                基于
+                <a href="https://cn.ubuntu.com/">Ubantu</a>
+                的
+                <a href="https://www.emqx.io/zh">EMQX</a>
+                <a href="https://click.aliyun.com/se/1013310647/">阿里云服务器</a>
+              </p>
+            </div>
+
+          </div>
+          <hr class="d-print-none" />
+
+          <!--硬件程序思路-->
+          <div class="work-experience-section px-3 px-lg-4">
+            <h2 class="h3 mb-4">硬件程序思路</h2>
+            <div class="timeline">
+              <!--主程序-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    主程序
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 导入程序所需要的库,初始化参数<br />
+                    2. 利用微信小程序连接硬件蓝牙完成设备配网<br />
+                    3. 从服务器获取数据<br />
+                    4. 监听服务器消息和硬件状态<br />
+                    5. 硬件显示主页面进入工作状态<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--蓝牙模块-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    蓝牙模块
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 连接蓝牙设备函数<br />
+                    2. 发送数据函数<br />
+                    3. 断开蓝牙连接函数<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--Wifi模块-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    Wifi模块
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 连接wifi函数<br />
+                    2. 发送数据函数<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--mqtt服务器模块-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    mqtt服务器模块
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 连接mqtt服务器函数<br />
+                    2. 订阅服务器主题函数<br />
+                    3. 发布主题函数<br />
+                    4. 回调函数<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--OLED显示屏模块-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    OLED显示屏模块
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 模块初始化<br />
+                    2. 显示图片函数<br />
+                    3. 显示中文函数<br />
+                    4. 显示初始界面函数<br />
+                    5. 显示主体界面函数<br />
+                    6. 显示设置界面函数<br />
+                    7. 重置函数<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--其余模块-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    其余模块
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 蜂鸣器模块: 蜂鸣器发声函数<br />
+                    2. MP3模块: MP3发生函数<br />
+                    3. 舵机模块: 舵机驱动函数<br />
+                    4. 键盘模块: 检测按键输入函数<br />
+                    3. 压力检测模块: 压力读取函数<br />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <hr class="d-print-none" />
+
+          <!--微信小程序思路-->
+          <div class="work-experience-section px-3 px-lg-4">
+            <h2 class="h3 mb-4">微信小程序思路</h2>
+            <div class="timeline">
+              <!--主菜单-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    主菜单
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 程序初始化&连接服务器<br />
+                    2. 获取天气信息&饲喂计划表<br />
+                    3. 添加饲喂计划并发布到服务器<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--设置菜单-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    设置菜单
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 服务器连接&服务器断开&服务器状态显示<br />
+                    2. 机器状态设置并发布到服务器<br />
+                    3. 蓝牙连接&蓝牙断开&蓝牙连接状态显示<br />
+                    4. WiFi信息输入&WiFi信息发送<br />
+                  </div>
+                </div>
+              </div>
+
+              <!--截图菜单-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    截图菜单
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 截图图片显示<br />
+                    2. 截图图片内容识别<br />
+                    3. 截图管理<br />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <hr class="d-print-none" />
+
+          <!--网页程序思路-->
+          <div class="work-experience-section px-3 px-lg-4">
+            <h2 class="h3 mb-4">网页程序思路</h2>
+            <div class="timeline">
+              <!--网页-->
+              <div class="timeline-card timeline-card-primary card shadow-sm">
+                <div class="card-body">
+                  <!--卡片标题-->
+                  <span class="text-muted h6">
+                    网页
+                  </span>
+                  <!--卡片内容-->
+                  <div>
+                    1. 毕业设计标题&指导老师&学生<br />
+                    2. 毕业设计介绍<br />
+                    3. 毕业设计的项目构成<br />
+                    4. 毕业设计的设计思路<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="d-print-none" />
+
+          <!--备案信息-->
+          <div style="padding:10px 0px 30px 0px;text-align: center;">
+            <!--公安备案信息-->
+            <img src="./icon.png">
+            <a style="color:#000;" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12011002023017" target="_blank">津公网安备 12011002023017号</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <!--IPC备案信息-->
+            <a style="color:#000;" href="https://beian.miit.gov.cn/">津ICP备2023001287号</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<html>
